@@ -7,3 +7,13 @@ before_install:
 
 script:
     - docker run -e CI=true ravikrn13/docker-react npm run test -- --coverage
+
+# use documentation
+#deploy:
+#    provider: elasticbeanstalk
+#    region: ...
+#    on:
+#         branch: master
+
+
+# Also add access key from IAM into travis's website environment config.
